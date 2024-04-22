@@ -1,1 +1,24 @@
-/* You can add global styles to this file, and also import other style files */
+body{
+  background-color: red;
+}
+
+/* Grid container */
+/* .k-grid {
+
+} */
+
+/* .k-grid th {
+  background-color: black !important;
+  color: white !important;
+} */
+/* Grid cell content */
+/* .k-grid-content td {
+  color: black !important;
+} */
+
+/* Other specific selectors can be used to target individual grid elements as needed */
+.k-grouping-header {
+  background-color: #0d0a0b;
+  background: linear-gradient(0deg, #020066 0%, #000000 30%);
+  color: #eeeeee;
+}

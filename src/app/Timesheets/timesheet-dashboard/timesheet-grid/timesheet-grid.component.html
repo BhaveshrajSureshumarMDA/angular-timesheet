@@ -1,0 +1,40 @@
+<kendo-grid
+[data]="grid"
+[pageSize]="pageSize"
+[skip]="skip"
+[pageable]="true"
+(pageChange)="pageChange($event)"
+[groupable]="true"
+[group]="groups"
+[loading]="gridloading"
+(groupChange)="groupChange($event)"
+[filterable]="true"
+[filter]="filter"
+(filterChange)="filterChange($event)"
+>
+
+  <kendo-grid-column
+  title="S.No"
+  >
+    <ng-template kendoGridCellTemplate let-dataItem let-rowIndex="rowIndex">
+      {{ rowIndex + 1 }}
+    </ng-template>
+  </kendo-grid-column>
+
+  <kendo-grid-column
+  field="timesheet_name"
+  title="Name"
+  ></kendo-grid-column>
+
+  <kendo-grid-column
+  field="timesheet_date"
+  title="Date"
+  [filterable]="true"
+  filter="date"
+  ></kendo-grid-column>
+
+  <kendo-grid-column
+  title="Actions"
+  ></kendo-grid-column>
+
+</kendo-grid>
